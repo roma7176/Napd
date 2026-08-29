@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  /* Type — one bilingual-friendly family for both scripts, plus a mono
+     for clinical data (vitals, labs, scores, timestamps). */
+  --font-sans: "IBM Plex Sans Arabic", "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Color — white-dominant clinical surface with a single, deliberate
+     crimson accent. Red is reserved for primary actions, active states,
+     and clinically abnormal findings — never a background wash. */
+  --color-white: #ffffff;
+  --color-paper: #fdfbfa;
+  --color-surface: #f7f3f2;
+  --color-line: #e7e0df;
+
+  --color-ink: #1f1c1c;
+  --color-ink-soft: #6b6360;
+  --color-ink-faint: #a39b98;
+
+  --color-red: #a6192e;
+  --color-red-dark: #7f1223;
+  --color-red-tint: #fbe9ea;
+  --color-red-tint-strong: #f3cdd0;
+
+  --color-amber: #b5760a;
+  --color-amber-tint: #fbf1de;
+
+  --color-good: #1f7a53;
+  --color-good-tint: #e4f3ec;
+
+  --radius-card: 0.75rem;
+  --radius-pill: 999px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-red-tint-strong);
+  color: var(--color-red-dark);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-red);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
