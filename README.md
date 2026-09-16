@@ -72,4 +72,10 @@ export default defineConfig([
   },
 ])
 
+
+## 🚀 Production Deployment
+
+- **Live Base API:** `https://napd-production.up.railway.app`
+- **Interactive API Docs (Swagger UI):** `https://napd-production.up.railway.app/docs`
+- **Alternative Docs (ReDoc):** `https://napd-production.up.railway.app/redoc`
 ````
