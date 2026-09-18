@@ -1,14 +1,13 @@
 import sys
 from pathlib import Path
+from fastapi import FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 
-# إضافة جذر المشروع الرئيسي (المجلد الذي يحتوي على core و app معا)
 BASE_DIR = Path(__file__).resolve().parent.parent
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
-from fastapi import FastAPI, Request
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
 from app.api.endpoints import router as evaluation_router
 
 app = FastAPI(
@@ -17,9 +16,16 @@ app = FastAPI(
     version="1.0.0"
 )
 
+origins = [
+    "https://nabd-app.vercel.app",  # رابط الفرونت إند على Vercel
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "*",                            # للسماح بجميع المصادر أثناء التست
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
