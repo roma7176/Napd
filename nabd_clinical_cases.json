@@ -1,0 +1,218 @@
+{
+    "pneumonia": {
+        "case_id": "pneumonia",
+        "title_en": "Community-Acquired Pneumonia",
+        "title_ar": "\u0627\u0644\u0627\u0644\u062a\u0647\u0627\u0628 \u0627\u0644\u0631\u0626\u0648\u064a",
+        "demographics": {
+            "age": 45,
+            "gender": "male",
+            "occupation": "Office Worker"
+        },
+        "chief_complaint": "Productive cough, fever, and progressive dyspnea for 3 days.",
+        "clinical_symptoms": [
+            "Fever and violent chills",
+            "Productive cough with purulent sputum",
+            "Dyspnea on mild exertion",
+            "Pleuritic chest pain aggravated by deep inspiration",
+            "Generalized fatigue and malaise",
+            "Tachypnea"
+        ],
+        "vital_signs": {
+            "temperature": "38.9 \u00b0C",
+            "heart_rate": "110 bpm",
+            "respiratory_rate": "26 breaths/min",
+            "blood_pressure": "110/70 mmHg",
+            "oxygen_saturation": "91% on Room Air"
+        },
+        "laboratory_panel": [
+            {
+                "test_name": "WBC Count",
+                "measured_value": "15,800 /\u00b5L",
+                "normal_range": "4,000-11,000 /\u00b5L",
+                "clinical_interpretation": "Leukocytosis indicating bacterial infection"
+            },
+            {
+                "test_name": "CRP",
+                "measured_value": "145 mg/L",
+                "normal_range": "< 10 mg/L",
+                "clinical_interpretation": "Severe elevation indicating active inflammation"
+            },
+            {
+                "test_name": "Procalcitonin",
+                "measured_value": "1.8 ng/mL",
+                "normal_range": "< 0.1 ng/mL",
+                "clinical_interpretation": "Elevated supporting bacterial etiology"
+            },
+            {
+                "test_name": "ABG PaO2",
+                "measured_value": "62 mmHg",
+                "normal_range": "80-100 mmHg",
+                "clinical_interpretation": "Hypoxemia present"
+            }
+        ],
+        "diagnostic_imaging": {
+            "modality": "Chest X-Ray (PA View)",
+            "findings": "Lobar consolidation in the right lower lobe with prominent air bronchograms."
+        },
+        "differential_diagnoses": [
+            "Acute Bronchitis",
+            "Pulmonary Embolism",
+            "Congestive Heart Failure",
+            "Tuberculosis",
+            "Bronchogenic Carcinoma"
+        ],
+        "final_diagnosis": "Community-Acquired Pneumonia (CAP)",
+        "medical_references": [
+            "WHO \u2014 Pneumonia Guidelines",
+            "CDC \u2014 Community-Acquired Pneumonia Management",
+            "Harrison's Principles of Internal Medicine",
+            "UpToDate \u2014 Clinical approach to CAP in adults"
+        ]
+    },
+    "appendicitis": {
+        "case_id": "appendicitis",
+        "title_en": "Acute Appendicitis",
+        "title_ar": "\u0627\u0644\u062a\u0647\u0627\u0628 \u0627\u0644\u0632\u0627\u0626\u062f\u0629 \u0627\u0644\u062f\u0648\u062f\u064a\u0629",
+        "demographics": {
+            "age": 22,
+            "gender": "female",
+            "occupation": "University Student"
+        },
+        "chief_complaint": "Acute abdominal pain originating periumbilically and shifting to the right lower quadrant over 12 hours.",
+        "clinical_symptoms": [
+            "Periumbilical pain migrating to RLQ",
+            "Nausea and recurrent vomiting",
+            "Anorexia",
+            "Low-grade fever",
+            "McBurney's point tenderness",
+            "Positive Rebound tenderness and Rovsing's sign"
+        ],
+        "vital_signs": {
+            "temperature": "38.2 \u00b0C",
+            "heart_rate": "98 bpm",
+            "respiratory_rate": "18 breaths/min",
+            "blood_pressure": "118/76 mmHg",
+            "oxygen_saturation": "99% on Room Air"
+        },
+        "laboratory_panel": [
+            {
+                "test_name": "WBC Count",
+                "measured_value": "14,200 /\u00b5L",
+                "normal_range": "4,000-11,000 /\u00b5L",
+                "clinical_interpretation": "Elevated indicating acute inflammation"
+            },
+            {
+                "test_name": "Neutrophils",
+                "measured_value": "85%",
+                "normal_range": "40-70%",
+                "clinical_interpretation": "Neutrophilia with left shift"
+            },
+            {
+                "test_name": "CRP",
+                "measured_value": "58 mg/L",
+                "normal_range": "< 10 mg/L",
+                "clinical_interpretation": "Elevated acute phase reactant"
+            },
+            {
+                "test_name": "Urinalysis",
+                "measured_value": "Normal",
+                "normal_range": "Normal",
+                "clinical_interpretation": "Excludes urinary tract pathology"
+            },
+            {
+                "test_name": "Beta-hCG",
+                "measured_value": "Negative",
+                "normal_range": "Negative",
+                "clinical_interpretation": "Excludes ectopic pregnancy"
+            }
+        ],
+        "diagnostic_imaging": {
+            "modality": "Abdominal Ultrasound / CT Abdomen",
+            "findings": "Enlarged non-compressible appendix (> 6mm diameter) with wall thickening and periappendiceal fluid aggregation."
+        },
+        "differential_diagnoses": [
+            "Ovarian Cyst Rupture / Torsion",
+            "Ectopic Pregnancy",
+            "Mesenteric Lymphadenitis",
+            "Urinary Tract Infection",
+            "Crohn's Disease Exacerbation"
+        ],
+        "final_diagnosis": "Acute Appendicitis",
+        "medical_references": [
+            "World Journal of Emergency Surgery \u2014 Appendicitis Guidelines",
+            "American College of Surgeons \u2014 Acute Abdomen Protocol",
+            "Harrison's Principles of Internal Medicine",
+            "UpToDate \u2014 Acute appendicitis in adults"
+        ]
+    },
+    "myocardialInfarction": {
+        "case_id": "myocardialInfarction",
+        "title_en": "Acute Myocardial Infarction (STEMI)",
+        "title_ar": "\u0627\u062d\u062a\u0634\u0627\u0621 \u0639\u0636\u0644\u0629 \u0627\u0644\u0642\u0644\u0628 (\u0627\u0644\u062c\u0644\u0637\u0629 \u0627\u0644\u0642\u0644\u0628\u064a\u0629)",
+        "demographics": {
+            "age": 58,
+            "gender": "male",
+            "occupation": "Commercial Driver"
+        },
+        "chief_complaint": "Severe crushing retrosternal chest pressure lasting 1 hour, accompanied by diaphoresis and dyspnea.",
+        "clinical_symptoms": [
+            "Crushing substernal chest pressure",
+            "Radiation to left arm, jaw, and back",
+            "Profuse diaphoresis",
+            "Dyspnea and lightheadedness",
+            "Nausea",
+            "Sense of impending doom"
+        ],
+        "vital_signs": {
+            "temperature": "37.0 \u00b0C",
+            "heart_rate": "104 bpm",
+            "respiratory_rate": "22 breaths/min",
+            "blood_pressure": "150/95 mmHg",
+            "oxygen_saturation": "94% on Room Air"
+        },
+        "laboratory_panel": [
+            {
+                "test_name": "Troponin I",
+                "measured_value": "3.5 ng/mL",
+                "normal_range": "< 0.04 ng/mL",
+                "clinical_interpretation": "Critically elevated indicating myocardial necrosis"
+            },
+            {
+                "test_name": "CK-MB",
+                "measured_value": "38 U/L",
+                "normal_range": "< 25 U/L",
+                "clinical_interpretation": "Elevated cardiac marker"
+            },
+            {
+                "test_name": "LDL Cholesterol",
+                "measured_value": "165 mg/dL",
+                "normal_range": "< 100 mg/dL",
+                "clinical_interpretation": "Elevated cardiovascular risk factor"
+            },
+            {
+                "test_name": "Blood Glucose",
+                "measured_value": "180 mg/dL",
+                "normal_range": "70-140 mg/dL",
+                "clinical_interpretation": "Stress hyperglycemia / uncontrolled diabetes"
+            }
+        ],
+        "diagnostic_imaging": {
+            "modality": "12-Lead Electrocardiogram (ECG)",
+            "findings": "ST-segment elevation across inferior leads (II, III, aVF) diagnostic of Inferior STEMI."
+        },
+        "differential_diagnoses": [
+            "Unstable Angina Pectoris",
+            "Acute Aortic Dissection",
+            "Acute Pulmonary Embolism",
+            "Acute Pericarditis",
+            "Gastroesophageal Reflux / Esophageal Spasm"
+        ],
+        "final_diagnosis": "ST-Elevation Myocardial Infarction (STEMI) \u2014 Inferior Wall",
+        "medical_references": [
+            "AHA/ACC \u2014 Guidelines for Management of STEMI",
+            "European Society of Cardiology (ESC) \u2014 Acute Coronary Syndromes Guidelines",
+            "Harrison's Principles of Internal Medicine",
+            "UpToDate \u2014 Diagnosis of acute myocardial infarction"
+        ]
+    }
+}

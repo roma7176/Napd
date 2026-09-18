@@ -42,8 +42,7 @@ async def global_exception_handler(request: Request, exc: Exception):
         },
     )
 
-@app.get("/health", tags=["Health"])
-async def health_check():
-    return {"status": "healthy", "service": "Nabd Backend"}
-
+@app.get("/")
+def read_root():
+    return {"status": "success", "message": "Nabd Backend API is running!"}
 app.include_router(evaluation_router, prefix="/api/v1")
