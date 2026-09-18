@@ -8,7 +8,7 @@
 
 const API_BASE_URL: string =
   (import.meta.env.VITE_API_BASE_URL as string | undefined)?.replace(/\/+$/, "") ??
-  "https://going-unmoral-atom.ngrok-free.dev";
+  "https://napd-production.up.railway.app";
 
 export type ApiErrorKind = "network" | "http" | "invalid-request" | "parse";
 
