@@ -1,17 +1,20 @@
-# Nabd
+# Nabd AI Clinical Multi-Agent Platform
 
-Nabd is an AI-powered clinical reasoning assessment platform for medical students.
+A novel, asynchronous Multi-Agent AI Decision Support Architecture designed for medical reasoning analysis, safety auditing, and autonomous clinical error feedback.
 
-## Frontend
+## Key Features
+- Concurrent Agent Execution: Operates specialized AI agents asynchronously (asyncio).
+- Safety Risk Matrix: Multi-perspective analysis dividing diagnostic reasoning and emergency safety.
+- Production Clean Architecture: Built with Pydantic v2 and Async FastAPI.
 
-Built with React, TypeScript, and Vite.
+## Project Architecture
 
-## Backend
-
-The backend provides the AI-powered clinical reasoning evaluation and session APIs.
-
-## Production Deployment
-
-- Live Base API: https://napd-production.up.railway.app
-- Swagger UI: https://napd-production.up.railway.app/docs
-- ReDoc: https://napd-production.up.railway.app/redoc
+nabd-clinical-agent/
+├── core/
+│   └── agent_core.py     # Async Multi-Agent Framework
+├── api/
+│   └── server.py         # Async RESTful Engine Service
+├── tests/
+│   └── test_agents.py    # PyTest Async Test Suite
+├── requirements.txt
+└── README.md
