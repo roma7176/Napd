@@ -1,0 +1,3 @@
+GEMINI_API_KEY = "AQ.Ab8RN6Kf1_80co7f0LoySMFQ-JP4sGHYVteHXDuVyyHKnuaugQ"
+MODEL_NAME = "gemini-3.6-flash"
+MAX_RETRIES = 5

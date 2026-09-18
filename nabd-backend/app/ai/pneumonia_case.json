@@ -1,0 +1,109 @@
+{
+    "case_id": "NABD-PNEU-001",
+    "title": "Community-Acquired Pneumonia Case",
+    "medical_specialty": "Pulmonology",
+    "difficulty_level": "Intermediate",
+    "created_by": "Habiba",
+    "target_competencies": [
+        "Clinical Evidence Gathering",
+        "Differential Diagnosis",
+        "Risk Stratification"
+    ],
+    "patient_profile": {
+        "demographics": {
+            "age": 62,
+            "gender": "Male",
+            "occupation": "Retired Factory Worker",
+            "residence_environment": "Urban"
+        },
+        "chief_complaint": {
+            "symptom": "Shortness of breath and severe fever",
+            "duration": "3 days",
+            "verbatim_patient_statement": "I feel like I cannot catch my breath and I have chills."
+        },
+        "vital_signs": {
+            "temperature_celsius": 39.1,
+            "heart_rate_bpm": 112,
+            "respiratory_rate_pm": 28,
+            "blood_pressure_sys": 105,
+            "blood_pressure_dia": 68,
+            "spo2_percentage": 89
+        },
+        "past_medical_history": [
+            "Type 2 Diabetes Mellitus",
+            "Hypertension"
+        ],
+        "smoking_history": "25 pack-years",
+        "allergies": [
+            "Penicillin"
+        ],
+        "medications": [
+            "Metformin 1000mg BID",
+            "Lisinopril 10mg OD"
+        ]
+    },
+    "laboratory_tests": [
+        {
+            "test_id": "LAB_WBC",
+            "category": "Hematology",
+            "name": "White Blood Cell Count",
+            "value": 18.2,
+            "unit": "x10^3/uL",
+            "reference_range": "4.5-11.0",
+            "flag": "HIGH",
+            "clinical_relevance": "Indicates acute systemic infection"
+        },
+        {
+            "test_id": "LAB_CRP",
+            "category": "Biochemistry",
+            "name": "C-Reactive Protein",
+            "value": 142.0,
+            "unit": "mg/L",
+            "reference_range": "< 5.0",
+            "flag": "HIGH",
+            "clinical_relevance": "Confirms systemic inflammation"
+        }
+    ],
+    "diagnostic_imaging": [
+        {
+            "image_id": "IMG_CXR_01",
+            "modality": "Chest X-Ray",
+            "image_url": "/assets/cases/pneumonia/cxr.png",
+            "radiology_report": "Dense lobar consolidation in right lower lobe with air bronchograms.",
+            "key_visual_cues": [
+                "Lobar Consolidation",
+                "Air Bronchograms"
+            ]
+        }
+    ],
+    "primary_diagnosis": "Community-Acquired Pneumonia",
+    "icd_10_code": "J18.9",
+    "differential_diagnoses": [
+        {
+            "condition": "Pulmonary Embolism",
+            "probability": "Moderate",
+            "supporting_factors": [
+                "Acute dyspnea",
+                "Tachycardia"
+            ],
+            "refuting_factors": [
+                "High fever",
+                "Lobar consolidation on CXR"
+            ]
+        }
+    ],
+    "cognitive_rubric": {
+        "data_gathering_weight": 0.3,
+        "hypothesis_generation_weight": 0.25,
+        "differential_reasoning_weight": 0.25,
+        "defense_and_management_weight": 0.2,
+        "must_include_keywords": [
+            "Streptococcus pneumoniae",
+            "Lobar Consolidation"
+        ],
+        "potential_biases_to_detect": [
+            "Anchoring Bias",
+            "Premature Closure"
+        ]
+    }
+}
