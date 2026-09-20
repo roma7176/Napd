@@ -13,7 +13,7 @@ from app.schemas.schemas import (
     DefenseSubmit,
 )
 from app.ai import ai_engine
-from app.core.engine import NabdCognitiveEngine
+from core.engine import NabdCognitiveEngine
 cognitive_engine = NabdCognitiveEngine()
 router = APIRouter()
 
