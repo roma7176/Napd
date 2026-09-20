@@ -17,11 +17,12 @@ app = FastAPI(
 )
 
 origins = [
-    "https://nabd-app.vercel.app",  # رابط الفرونت إند على Vercel
+    "https://napd-delta.vercel.app",
+    "https://nabd-app.vercel.app",
     "http://localhost:3000",
     "http://localhost:5173",
-    "*",                            # للسماح بجميع المصادر أثناء التست
-]
+    "*"
+]                           # للسماح بجميع المصادر أثناء التست
 
 app.add_middleware(
     CORSMiddleware,
